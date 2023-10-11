@@ -1,0 +1,7 @@
+numpy==1.25.1
+matplotlib==3.7.2
+napari==0.4.18
+scikit-image==0.21.0
+pandas==2.0.3
+lmfit==1.2.2
+scipy==1.11.1
