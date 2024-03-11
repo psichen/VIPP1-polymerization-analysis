@@ -209,7 +209,6 @@ def show_spiral(traj, label=None, save=0):
     def update(frame):
         l1.set_data(dp.loc[dp['time']==time[frame], 'x_inner'], dp.loc[dp['time']==time[frame], 'y_inner'])
         l2.set_data(dp.loc[dp['time']==time[frame], 'x_outer'], dp.loc[dp['time']==time[frame], 'y_outer'])
-        # l3.set_data(dp.loc[dp['time']==time[frame], 'x_center'], dp.loc[dp['time']==time[frame], 'y_center'])
         if label is not None:
             if len(dp.loc[dp['time']==time[frame]]) >= label:
                 l3.set_data(dp.loc[dp['time']==time[frame], 'x_center'].values[label], dp.loc[dp['time']==time[frame], 'y_center'].values[label])

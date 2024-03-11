@@ -95,7 +95,7 @@ def get_rigidity_from_count(count, width=p.w, rigidity=p.rg):
     :returns: rigidity array (nm*kBT)
 
     """
-    rgdt = rigidity*np.ones_like(count)
+    rgdt = rigidity*count**3
     return rgdt
 
 def get_intrinsic_curvature_from_count(count, curvature_list=p.cur_list):
@@ -378,7 +378,6 @@ if __name__ == "__main__":
         x = []
         y = []
         for i in np.arange(cnt):
-            # rds = np.arange(10,300).astype(float)
             rds = np.linspace(10,300,5000).astype(float)
             rds = rds[rds>i/2*p.w]
             eng = show_internal_energy(rds, i+1)
