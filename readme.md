@@ -1,7 +1,5 @@
 ## Description ##
 
-**=====The repository is for peer-review only at the moment=====**
-
 This is a workflow to analyze VIPP1 polymerization on support lipid bilayers (SLB).
 
 ## Requirement ##
